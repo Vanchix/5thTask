@@ -69,7 +69,6 @@ class Inventory
     }
     public void IventoryFilling(Product productInInventory)
     {
-        Product product = new Product();
         for (int i = n; i < 1000; i++)
         {
             Console.WriteLine("Если хотите ввести продукт нажмите 1, иначе нажмите другую клавишу");
@@ -112,8 +111,7 @@ class Inventory
     public void IventoryFind()
     {
         Console.WriteLine("Введите наименование продукта который хотите найти");
-        var name = Console.ReadLine();
-        string find = name;
+        var find = Console.ReadLine();
         for (var i = 0; i < n; i++)
         {
             if (productsList[i].Contains(find))
